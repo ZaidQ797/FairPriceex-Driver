@@ -33,6 +33,7 @@
   },
   "tabbar": {
     "text_home": "Home",
+    "text_find": "Find",
     "text_deliveries": "Deliveries",
     "text_notification": "Notification",
     "text_account": "Account"

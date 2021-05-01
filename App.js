@@ -27,6 +27,7 @@ import EditAccountScreen from './src/screens/edit-account';
 import DeliveryAddressScreen from './src/screens/delivery-address';
 import {AuthContext} from './src/utils/auth-context';
 import {loginWithEmail} from './src/services/auth-service';
+import Find from './src/screens/find';
 
 import TabBar from './src/containers/TabBar';
 
@@ -42,6 +43,7 @@ function MainTab() {
   return (
     <Tab.Navigator tabBar={props => <TabBar {...props} />}>
       <Tab.Screen name="HomeScreen" component={HomeScreen} />
+      <Tab.Screen name="Find" component={Find} />
       <Tab.Screen name="DeliveryScreen" component={DeliveryScreen} />
       <Tab.Screen name="NotificationScreen" component={NotificationScreen} />
       <Tab.Screen name="AccountScreen" component={AccountScreen} />
@@ -218,6 +220,11 @@ function App() {
                 options={{headerShown: false}}
                 name="Home"
                 component={MainTab}
+              />
+              <Stack.Screen
+                options={{headerShown: false}}
+                name="Find"
+                component={Find}
               />
               <Stack.Screen
                 options={{headerShown: false}}

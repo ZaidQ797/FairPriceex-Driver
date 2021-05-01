@@ -24,6 +24,11 @@ function TabBar(props) {
       router: 'HomeScreen',
     },
     {
+      icon: 'filter',
+      name: t('tabbar:text_find'),
+      router: 'Find',
+    },
+    {
       icon: 'truck-fast',
       name: t('tabbar:text_deliveries'),
       router: 'DeliveryScreen',
